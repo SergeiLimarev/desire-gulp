@@ -199,6 +199,7 @@
   top: 0;
   bottom: 0;
   max-width: 694px;
+  min-height: 950px;
   width: 100%;
   background-color: #fff;
   padding-top: 40px;
@@ -415,5 +416,39 @@
     font-weight: 600;
     line-height: 28px;
     color: #707070;
+  }
+}
+
+.call-to-action{
+  padding: 170px 0 155px;
+  background-image: url(../images/call-to-action-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 616px;
+
+  &__title{
+    @extend %title-font;
+    color: $title;
+    font-size: 60px;
+    line-height: 80px;
+    max-width: 500px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      margin: 0 auto;
+      background: #6D7278;
+    }
+  }
+
+  &__text{
+    max-width: 500px;
   }
 }
