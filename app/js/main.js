@@ -14,4 +14,11 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 5000
     });
+
+    var mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: '.living'
+        }
+    });
+
 });
